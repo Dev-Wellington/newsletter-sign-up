@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="background">
+      <header>
+        <picture>
+          <source media="(max-width:768px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="Imagem de uma tela mostrando um grafico que contem uma alta e o numero 94 de pontuação"
+            class="grafico"
+         
+          />
+        </picture>
+        
+      </header>
+      <main>
+        
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <span>
+            <img src="assets/images/icon-list.svg" alt="Imagem de um circulo com uma seta afirmativa dentro dele" />
+            <p>Product discovery and building what matters </p> </span
+          ><span>
+            <img src="assets/images/icon-list.svg" alt="Imagem de um circulo com uma seta afirmativa dentro dele" />
+            <p>Measuring to ensure updates are
+              a success </p> </span
+          ><span>
+            <img src="assets/images/icon-list.svg" alt="Imagem de um circulo com uma seta afirmativa dentro dele" />
+            <p>And much more!</p>
+          </span>
+        
+        
+          <form>
+            <div class="email-container">
+
+              <label for="email">Email address</label>
+              <span id="emailError" class="error-message"></span>
+            </div>
+            <input id="email" type="email" placeholder="email@company.com" required />
+            <button class="btn-subscribe">Subscribe to monthly newsletter</button>
+          </form>
+       
+      </main>
+      <div class="sucess">
+        <div class="sucess-subscribing">
+
+          <img src="assets/images/icon-list.svg" alt="Imagem de um circulo com uma seta afirmativa dentro dele" class="sucess-img" />
+          <h2>Thanks for subscribing!</h2>
+          <p>A confirmation email has been sent to
+           <strong>ash@loremcompany.com</strong> . Please open it and click the button inside to confirm
+            your subscription.</p>
+        </div>
+          <button class="dismiss">Dismiss message</button>
+      </div>
+    </div>
+   
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Wellington Silva</a>.
+    </div> -->
+  </body>
+  <script src="js/script.js"></script>
+</html>

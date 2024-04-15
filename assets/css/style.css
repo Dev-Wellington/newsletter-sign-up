@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --orange: hsl(15, 100%, 62%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: var(--white);
+}
+.sucess {
+   
+
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sucess {
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  padding: 8% 5%;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sucess-subscribing {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25%;
+  gap: 20px;
+}
+.sucess-subscribing > .sucess-img {
+  width: 20%;
+  height: 20%;
+}
+.sucess-subscribing > h2 {
+  color: var(--dark-slate-grey);
+  font-size: 32px;
+}
+.sucess > button {
+  height: 44px;
+  border-radius: 5px;
+
+  border: none;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+}
+.sucess > button:hover {
+  cursor: pointer;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--tomato), var(--orange));
+}
+.grafico {
+  width: 100vw;
+  height: 100%;
+}
+main {
+  padding: 8% 5%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  color: var(--dark-slate-grey);
+  font-size: 32px;
+}
+span {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--charcoal-grey);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+label {
+  font-weight: 700;
+  color: var(--dark-slate-grey);
+  font-size: 12px;
+}
+.btn-subscribe,
+input {
+  height: 44px;
+  border-radius: 5px;
+
+  border: none;
+}
+.btn-subscribe {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+}
+.btn-subscribe:hover {
+  cursor: pointer;
+  width: 100%;
+  background-image: linear-gradient(to right, var(--tomato), var(--orange));
+}
+
+form label {
+  margin-bottom: -10px;
+}
+.email-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .error-message {
+  margin-bottom: -10px;
+font-size: 12px;
+    color: var(--tomato);
+    margin-left: 10px;
+  }
+input {
+  border: 1px solid var(--grey);
+  padding-left: 16px;
+  font-weight: 400;
+  
+}
+input::placeholder {
+  color: var(--grey);
+}
+input:focus,
+input:hover {
+  outline-color: var(--dark-slate-grey);
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--charcoal-grey);
+  }
+  .sucess {
+    display: flex;
+    display: none;
+    justify-content: space-around;
+  
+   padding: 0 2%;
+   width: 30dvw;
+   height: 60dvh;
+   border-radius: 25px;
+  }
+  .sucess-subscribing {
+gap: 10px;
+    padding: 0;
+    
+  }
+  .sucess-subscribing > h2 {
+    font-size: 48px;
+    
+  }
+  
+  .background {
+    border-radius: 50px;
+
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  header {
+    padding: 4% 4%;
+  }
+  .grafico {
+    width: 100%;
+  }
+}
